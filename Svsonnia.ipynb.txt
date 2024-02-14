@@ -1,0 +1,85 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#Webpage View - Library of Congress - Civil War Digital Collection\n",
+        "The [Collection](/ \"Civil War Collection page\") explores the faces, places and events of the Civil War through photographs, prints and drawings. The webpage for the Collection https://www.loc.gov/collections/civil-war/ is structured to provide a user with an interative and navigable experience. The many hyperlinks provided for refining search results, facilitates a *deep dive* into the available data.\n",
+        "\n",
+        "\n",
+        "##Header\n",
+        "The webpage has a header which consists of the LOC's logo, a search bar and a menu of services provided. The **search bar** has a dropdown menu of preset categories and the **menu of services** is also displayed as a dropdown menu.\n",
+        "\n",
+        "##Body\n",
+        "The body of the page displays the title of the collection **Civil War** and directly below the title are links for *About this Collection* and *Collection Items*.\n",
+        "\n",
+        "###About the Collection\n",
+        "This link directs the user to a page which displays featured content, which consists of several collection items which can be accessed using a slider. Below on the left of the page, a catalogue provides links to *related resources*, *rights and access* and *expert resources*.\n",
+        "\n",
+        "###Collection Items\n",
+        "This page provides the following:\n",
+        " * \"Results\", which displays the volume/count of items in the digital collection\n",
+        " * A catalogue of selections which assists with the refining of searches\n",
+        " * The collection items which consist of an image and associated text describing the item. The collection ofitems are displayed based on the view selected by the user (e.g. gallery or grid).\n",
+        "\n",
+        "\n",
+        " ##Footer\n",
+        " The footer displays links to the following:\n",
+        " * Social media\n",
+        " * Copyright\n",
+        " * Disclaimers\n",
+        " * Contact\n",
+        " * Shop\n",
+        " * Media Centre\n",
+        "\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "2q9qPDveE7po"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "Q1s5tTVTnslt"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#Command Line View\n",
+        "While the **Command Line View** is not as visualy appealing or as easy to navigate as the Webpage view, the same data and more is provided in this view. A user familiar with this view will note that the sequence of the data displayed follows the same sequence as on the webpage. For examle when viewing the collection of Civil War items, the last item in both views is **\"title\":\"[Unidentified soldier in Union New York style shell jacket with American flag]\"**   "
+      ],
+      "metadata": {
+        "id": "kPA-fR5FntsW"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "lX6idbkdEQLM"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
