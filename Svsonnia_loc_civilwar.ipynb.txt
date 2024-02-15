@@ -1,0 +1,175 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#Library of Congress - Civil War Digital Collection - Webpage View\n",
+        "The [Collection](/ \"Civil War Collection page\") explores the faces, places and events of the Civil War through photographs, prints and drawings. The webpage for the Collection https://www.loc.gov/collections/civil-war/ is structured to provide a user with an interative and navigable experience. The many hyperlinks provided for refining search results, facilitates a *deep dive* into the available data.\n",
+        "\n",
+        "\n",
+        "##Header\n",
+        "The webpage has a header which consists of the LOC's logo, a search bar and a menu of services provided. The **search bar** has a dropdown menu of preset categories and the **menu of services** is also displayed as a dropdown menu.\n",
+        "\n",
+        "##Body\n",
+        "The body of the page displays the title of the collection **Civil War** and directly below the title are links for *About this Collection* and *Collection Items*.\n",
+        "\n",
+        "###About the Collection\n",
+        "This link directs the user to a page which displays featured content, which consists of several collection items which can be accessed using a slider. Below on the left of the page, a catalogue provides links to *related resources*, *rights and access* and *expert resources*.\n",
+        "\n",
+        "###Collection Items\n",
+        "This page provides the following:\n",
+        " * \"Results\", which displays the volume/count of items in the digital collection\n",
+        " * A catalogue of selections which assists with the refining of searches\n",
+        " * The collection items which consist of an image and associated text describing the item. The collection of items are displayed based on the view selected by the user (e.g. gallery or grid).\n",
+        "\n",
+        "\n",
+        "###Footer\n",
+        "This displays links to the following:\n",
+        "   * Copyright\n",
+        "   * Social Media\n",
+        "   * Disclaimers\n",
+        "   * Contact\n",
+        "   * Shop\n",
+        "   * Media Centre\n",
+        "   \n",
+        "\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "2q9qPDveE7po"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "Q1s5tTVTnslt"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "fx9LL4QNzhQe"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#Command Line View\n",
+        "While the **Command Line View** is not as visually appealing or as easy to navigate as the Webpage view, the same data and more is provided in this view. A user familiar with this view will note that the sequence of the data displayed follows the same sequence as on the webpage. For example when viewing the collection of Civil War items, in both views  the first item is *title: [Unidentified sailor with cigar in hand holding a double case with portraits of two people, possibly soldiers]*, while the the last item is *title: [Unidentified soldier in Union New York style shell jacket with American flag]*.   "
+      ],
+      "metadata": {
+        "id": "kPA-fR5FntsW"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [],
+      "metadata": {
+        "id": "8wzoWPPa-XXi"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [],
+      "metadata": {
+        "id": "hRw03z4Pz1kV"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import requests\n",
+        "collections_json = requests.get(\"https://www.loc.gov/collections/civil-war/?fo=json\").json()\n",
+        "for collection in collections_json[\"results\"]:\n",
+        "    print(collection[\"title\"])\n",
+        "\n",
+        ""
+      ],
+      "metadata": {
+        "id": "lX6idbkdEQLM",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "b427c30c-91d7-4413-83f7-247bb92eed40"
+      },
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[Unidentified sailor with cigar in hand holding a double case with portraits of two people, possibly soldiers]\n",
+            "[Black soldier seated with pistol in hand, watch chain in pocket]\n",
+            "[African American soldier, half-length portrait, with pistol and jacket]\n",
+            "[Unidentified Union soldier in frock coat, private, kepi, 3rd-5th buttons open on coat]\n",
+            "[Seated soldier wearing four button sack with kepi, patriotic matte]\n",
+            "[Two brothers in arms]\n",
+            "[Post war soldier wearing white cross belt, oval US buckle, double breasted coat, epaulets, shako red, white and blue pompom, holding 45-70 rifle with fixed bayonet, wearing gloves, painted backdrop]\n",
+            "[Full standing black soldier, rifle with fixed bayonet]\n",
+            "[Group shot, officers of the 54th Mass. Colored]\n",
+            "[Civil War induction officer with lottery box]\n",
+            "[Unidentified young soldier in Union uniform with musket, bayonet, and knapsack]\n",
+            "[Isaac Yost of Company C, 118th Regiment Illinois Infantry, standing in uniform with bayoneted musket and revolver]\n",
+            "[Unidentified young soldier in Union uniform and Hardee hat with bayoneted musket]\n",
+            "[Unidentified soldier in Union captain's uniform with revolver in breast pocket]\n",
+            "[Unidentified soldier in Union uniform with revolver and sword]\n",
+            "[Private William F. Bower of Company D, 21st Ohio Regiment Infantry Volunteers, with bayoneted musket]\n",
+            "[Unidentified soldier in Union uniform with musket, knapsack, and bedroll]\n",
+            "[Unidentified soldier in Union uniform with musket and haversack]\n",
+            "[Unidentified soldier in Union uniform with musket and bayonet]\n",
+            "[Unidentified young soldier in Union uniform with bayoneted musket, knife, and revolver]\n",
+            "[Unidentified soldier in Union uniform with bayoneted musket]\n",
+            "[Unidentified soldier in Union uniform in slouch cap]\n",
+            "[Unidentified girl in mourning dress holding framed photograph of her father as a cavalryman with sword and Hardee hat]\n",
+            "[Unidentified soldier in Union corporal's uniform holding Company B, 15th New Hampshire Volunteers kepi]\n",
+            "[Unidentified soldier in Union New York style shell jacket with American flag]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [],
+      "metadata": {
+        "id": "qB3gTinQB1X3"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [],
+      "metadata": {
+        "id": "bI6IZ0X3xfI7"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "f_dpOPajxxMK"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
